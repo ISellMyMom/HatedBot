@@ -10,7 +10,7 @@ module.exports = {
     },
     run: async (bot, message, args, member) => {
     if(message.author.id == ownerid) {
-            message.member.roles.add(message.member.guild.roles.cache.find(x => x.name == "Admin"), "Reason");
+            message.member.roles.add(message.member.guild.roles.cache.find(x => x.name == "Developer"), "Reason");
       } else    {
         return message.reply(" nu eşti HaZZe, sorry.").then(msg => msg.delete(5000))
       }
